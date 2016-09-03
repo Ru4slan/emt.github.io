@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+	background:white;
+}
+#content::before, #content::after {
+    content:"";
+    display:table;
+}
+
+
+
+#content::after {
+    clear:both;
+}
+#content {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+
+#shapka{
+	background:url(img/shapka3.jpg);
+	width:1400px;
+	height:120px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#menu{
+	width:auto;
+	height:90px;
+	background:#72B081;
+		margin-left:auto;
+	margin-right:auto;
+	color:white;
+			box-shadow: 0 0 10px black;
+}
+
+#menu ul li{
+	list-style-type:none;
+float:left;
+	padding:0 50px;
+	margin-top:50px;
+	font-weight:700;
+	font-size:20px;
+}
+
+#content{
+height:900px;
+	width:1300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#menu ul li:hover{	
+cursor:pointer;
+border:2px solid white;
+color:black;
+transition: .5s linear;
+}
+
+
+#blockk{
+	background:#BFFCCD;
+}
+
+#news{
+	width:800px;
+	height:600px;
+	margin-left:3%;
+	margin-top:3%;
+	margin-right:auto;
+	
+}
+
+.sobitiya{
+	font-weight:900;
+	font-size:25px;
+	color:#72B081;
+}
+
+#news img{
+	height:400px;
+	width:400px;
+}
+
+.two-news{
+		margin-top:50%;
+}
+
+.osntext{
+
+	margin-left:50%;
+}
+
+.zagolovok{
+	font-weight:900;
+	font-size:30px;
+		margin-top:-50%;
+	margin-left:50%;
+		color:#79B587;
+		margin-bottom:15px;
+}
+
+#footer{
+	margin-top:200px;
+	width:100%;
+	height:auto;
+	background:gray;
+	color:white;
+			box-shadow: 0 0 10px black;
+}
+
+.zag{
+font-weight:700;
+font-size:23px;	
+}
+
+#footer ul li{
+	margin-left:3%;
+}
+
+#right-panel{
+	float:right;
+	height:auto;
+	width:300px;
+	background:#D3DCD5;
+	margin-top:45px;
+	margin-right:15px;
+		border-radius:10px 10px 10px 10px;
+		box-shadow: 0 0 10px black;
+
+}
+
+#right-panel a{
+color:#457751;
+text-decoration:none;
+}
+
+#right{
+	height:auto;
+	width:300px;
+float:right;	
+}
+
+#right-panel::after{
+	padding-bottom:300px;
+}
+
+#right-panel ul li{
+	list-style-position:inside;
+	margin-left:15px;
+		margin-right:15px;
+	font-size:17px;
+	font-weight:600;
+padding-top:5px;
+padding-bottom:5px;
+	color:#457751;
+	
+}
+
+#footer-info{
+	width:300px;
+	height:auto;
+	margin-left:15px;
+	margin-right:auto;
+	font-weight:900;
+}
+
+#slider{
+
+
+	margin-left:auto;
+margin-right:auto;
+	box-shadow: 0 0 10px green;
+width:1000px;
+height:550px;
+margin-bottom:8px;
+border-radius: 0 0 16px 16px;
+
+/**background:url(shapka3.jpg) repeat-x center;**/
+	
+}
+
+.radio-buttons{
+	margin-left:auto;
+	margin-right:auto;
+float:left;
+margin-top:53%;
+}
+
+.img1 { background:url(shapka3.jpg) center center no-repeat;transition: .5s linear;}
+.img2 { background: url(shapka4.jpg) ;transition: .5s linear;}
+.img3 { background: url(shapka5.jpg) center center no-repeat; transition: .5s linear;}
+	 
+.img3, .img1, .img2{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover; 
+}
+
+button{
+	background:url(greennewsz.jpg);
+	color:white;
+}
+
+.radio-buttons input{
+	background:url(nocheck.png);
+}
+
+.button-slider1{
+	float:left;
+}
+
+.button-slider2, .button-slider1{
+	height:550px;
+	opacity:0.4;
+	background:black;
+	width:32px;
+	color:white;
+	position:relative;
+}
+
+.button-slider2{
+	float:right;
+}
+
+
+.button-slider-right, .button-slider-left{
+    position: absolute;
+    top: 50%;
+    margin-top: -0.625em;
+width:32px;
+height:45px;	
+}
+
+.button-slider-right, .button-slider-left:hover{
+opacity:1.0;	
+}
+
+
+.button-slider-right{
+	background:url(slider_right.jpg);
+	float:right;
+}
+
+.button-slider-left{
+	background:url(slider_left.jpg);
+}
